@@ -2,13 +2,11 @@
 #include <cassert>
 using namespace std;
 
-// Temporary implementation for TDD demonstration
+// Function to check whether an array is sorted
 bool isSorted(const int* arr, const int size) {
 
     for (int i = 0; i < size - 1; i++) {
 
-        // If current element is greater than next,
-        // the array is not sorted
         if (arr[i] > arr[i + 1]) {
             return false;
         }
